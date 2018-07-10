@@ -78,39 +78,27 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	<div class="layui-container">
 		<a href="#" class="theme-icon">
 			<div class="img-box">
-				<img src="#">
+				<img src="<?php $this->options->themeUrl('./img/github.jpg'); ?>">
 			</div>
-			<p>第一项</p>
+			<p>github</p>
 		</a>
-		<a href="#" class="theme-icon">
+		<a href="https://www.eolinker.com/#/" class="theme-icon">
 			<div class="img-box">
-				<img src="#">
+				<img src="<?php $this->options->themeUrl('./img/eoapi.jpg'); ?>">
 			</div>
-			<p>第一项</p>
+			<p>eoapi</p>
 		</a>
-		<a href="#" class="theme-icon">
+		<a href="https://coding.net/" class="theme-icon">
 			<div class="img-box">
-				<img src="#">
+				<img src="<?php $this->options->themeUrl('./img/coding.jpg'); ?>">
 			</div>
-			<p>第一项</p>
+			<p>coding</p>
 		</a>
-		<a href="#" class="theme-icon">
+		<a href="https://ex.ipietech.net/" class="theme-icon">
 			<div class="img-box">
-				<img src="#">
+				<img src="<?php $this->options->themeUrl('./img/wiki.jpg'); ?>">
 			</div>
-			<p>第一项</p>
-		</a>
-		<a href="#" class="theme-icon">
-			<div class="img-box">
-				<img src="#">
-			</div>
-			<p>第一项</p>
-		</a>
-		<a href="#" class="theme-icon">
-			<div class="img-box">
-				<img src="#">
-			</div>
-			<p>第一项</p>
+			<p>wiki</p>
 		</a>
 		
 	</div>

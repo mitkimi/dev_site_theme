@@ -140,8 +140,12 @@ html, body {
 }
 .theme-icon p {
   text-align: center;
-  color: #999;
+  color: #666;
   margin-top: 14px;
+  font-size: 16px;
+}
+.theme-icon:hover p {
+  color: #333;
 }
 .layui-breadcrumb {
   display: block;
