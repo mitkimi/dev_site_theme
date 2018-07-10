@@ -41,7 +41,19 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 </script>
 
 <div class="layui-container theme-container">
-	<div class="">
+	<div class="theme-flex-container">
+		<?php while($this->next()): ?>
+		<div class="card">
+			<div class="title"><a href="<?php $this->permalink() ?>" target="_blank" ><?php $this->title() ?></a></div>
+			<div class="sub-title">作者：<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a> | 时间：<?php $this->date(); ?> | <?php $this->category(','); ?> | tags <span class="layui-badge-rim">aaa</span></div>
+			<div class="detail">
+				<?php $this->content('- 阅读剩余部分 -'); ?>
+			</div>
+			<a href="<?php $this->permalink() ?>" class="link">阅读全文</a>
+		</div>
+		<?php endwhile; ?>
+	</div>
+	<div class="" style="display: none;">
 		<?php while($this->next()): ?>
 	        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 				<h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
