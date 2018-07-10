@@ -1,0 +1,70 @@
+.content-detail {
+  font-size: 16px;
+  line-height: 20px;
+}
+.content-detail h1 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-top: 20px;
+}
+.content-detail h2 {
+  font-size: 26px;
+  line-height: 30px;
+  margin-top: 18px;
+}
+.content-detail h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 16px;
+}
+.content-detail h4 {
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 14px;
+}
+.content-detail h5 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+.content-detail h6 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.content-detail ul, .content-detail ol {
+  margin-left: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content-detail ul li {
+  list-style-type: disc;
+  line-height: 24px;
+}
+.content-detail ol li {
+  list-style-type: decimal;
+  line-height: 24px;
+}
+.content-detail blockquote {
+  background: #ddd;
+  padding: 10px 10px 10px 20px;
+  margin: 10px 0;
+  border-left: 4px solid #393D49;
+}
+.content-detail blockquote p {
+  line-height: 24px;
+  height: 24px;
+  color: #666;
+}
+
+.content-detail pre {
+  background: #ddd;
+  border-radius: 6px;
+  padding: 0 24px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+.content-detail pre code {
+  color: #666;
+}
