@@ -109,7 +109,7 @@ html, body {
   border-right: 1px solid rgba(0,0,0,.05);
   box-shadow: 0 2px 2px rgba(0,0,0,.2);
   border-radius:0 6px 6px 0;
-  padding: 20px 0!important;
+  padding: 20px!important;
   margin-bottom: 20px!important;
 }
 .theme-icons-container {
@@ -142,15 +142,15 @@ html, body {
   text-align: center;
   color: #666;
   margin-top: 14px;
-  font-size: 16px;
+  font-size: 1px;
 }
 .theme-icon:hover p {
   color: #333;
 }
 .layui-breadcrumb {
   display: block;
-  height: 50px;
-  line-height: 49px;
+  height: 40px;
+  line-height: 29px;
   border-bottom: 1px solid rgba(0,0,0,.05);
   margin-bottom: 20px;
 }
