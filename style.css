@@ -69,11 +69,39 @@ html, body {
   color:#999;
 }
 
-.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
-.card div, .card p, .card pre, .card blockquote {
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .card p, .card pre, .card blockquote ,
+.card abbr, .card address, .card cite, .card code, .card del, .card dfn, 
+.card em, .card ins, .card kbd, .card q, .card samp, .card small, .card strong, 
+.card sub, .card sup, .card var, .card b, .card i, .card dl, .card dt, .card dd, 
+.card ol, .card ul, .card li, .card fieldset, .card form, .card label, .card legend, 
+.card table, .card caption, .card tbody, .card tfoot, .card thead, .card tr, .card th, .card td, 
+.card article, .card aside, .card canvas, .card details, .card figcaption, .card figure, 
+.card footer, .card header, .card hgroup, .card menu, .card nav, .card section, 
+.card summary, .card time, .card mark {
   font-size: 14px;
   color: #999;
+  display:inline;
+  margin:0;
+  padding:0;
+  border:0;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
 } 
+.card h1:after, .card h2:after, .card h3:after, .card h4:after, .card h5:after, .card h6:after, .card p:after, .card pre:after, .card blockquote:after ,
+.card abbr:after, .card address:after, .card cite:after, .card code:after, .card del:after, .card dfn:after, 
+.card em:after, .card ins:after, .card kbd:after, .card q:after, .card samp:after, .card small:after, .card strong:after, 
+.card sub:after, .card sup:after, .card var:after, .card b:after, .card i:after, .card dl:after, .card dt:after, .card dd:after, 
+.card ol:after, .card ul:after, .card li:after, .card fieldset:after, .card form:after, .card label:after, .card legend:after, 
+.card table:after, .card caption:after, .card tbody:after, .card tfoot:after, .card thead:after, .card tr:after, .card th:after, .card td:after, 
+.card article:after, .card aside:after, .card canvas:after, .card details:after, .card figcaption:after, .card figure:after, 
+.card footer:after, .card header:after, .card hgroup:after, .card menu:after, .card nav:after, .card section:after, 
+.card summary, .card time, .card mark {
+  content: " ";
+}
+.card img, .card table {
+  display:none;
+}
 .clearfix {
   clear:both;
 }

@@ -1,6 +1,8 @@
 <?php
 /**
  * 用于开发网站的typecho主题，力求简约
+ * UI库：layui
+ * 插件：layui.js swiper.js
  * 
  * @package Dev_site_theme
  * @author i@mitkimi.com
@@ -15,10 +17,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <!-- Swiper -->
 <div class="swiper-container">
 	<div class="swiper-wrapper">
-	  <div class="swiper-slide">Slide 1</div>
-	  <div class="swiper-slide">Slide 2</div>
-	  <div class="swiper-slide">Slide 3</div>
-	  <div class="swiper-slide">Slide 4</div>
+	  <div class="swiper-slide">
+	  	<img src="https://dev.mall.ipietech.net/usr/uploads/2018/07/3616744908.jpg" />
+	  </div>
 	</div>
 	<!-- Add Pagination -->
 	<div class="swiper-pagination"></div>
@@ -45,11 +46,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 		<?php while($this->next()): ?>
 		<div class="card">
 			<div class="title"><a href="<?php $this->permalink() ?>" target="_blank" ><?php $this->title() ?></a></div>
-			<div class="sub-title">作者：<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a> | 时间：<?php $this->date(); ?> | <?php $this->category(','); ?> | tags <span class="layui-badge-rim">aaa</span></div>
+			<div class="sub-title">作者：<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a> | 时间：<?php $this->date(); ?> | <?php $this->category(','); ?> | <span class="layui-badge-rim"><?php $this->commentsNum('0 条评论', '1 条评论', '%d 条评论'); ?></span></div>
 			<div class="detail">
 				<?php $this->content('- 阅读剩余部分 -'); ?>
 			</div>
-			<a href="<?php $this->permalink() ?>" class="link">阅读全文</a>
+			<a href="<?php $this->permalink() ?>" class="link" target="_blank">阅读全文</a>
 		</div>
 		<?php endwhile; ?>
 	</div>
@@ -76,25 +77,31 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 <div class="theme-icons-container">
 	<div class="layui-container">
-		<a href="#" class="theme-icon">
+		<a href="#" class="theme-icon" target="_blank">
 			<div class="img-box">
 				<img src="<?php $this->options->themeUrl('./img/github.jpg'); ?>">
 			</div>
 			<p>github</p>
 		</a>
-		<a href="https://www.eolinker.com/#/" class="theme-icon">
+		<a href="https://www.eolinker.com/#/" class="theme-icon" target="_blank">
 			<div class="img-box">
 				<img src="<?php $this->options->themeUrl('./img/eoapi.jpg'); ?>">
 			</div>
 			<p>eoapi</p>
 		</a>
-		<a href="https://coding.net/" class="theme-icon">
+		<a href="https://coding.net/" class="theme-icon" target="_blank">
 			<div class="img-box">
 				<img src="<?php $this->options->themeUrl('./img/coding.jpg'); ?>">
 			</div>
 			<p>coding</p>
 		</a>
-		<a href="https://ex.ipietech.net/" class="theme-icon">
+		<a href="https://teambition.com/" class="theme-icon" target="_blank">
+			<div class="img-box">
+				<img src="<?php $this->options->themeUrl('./img/teambition.jpg'); ?>">
+			</div>
+			<p>teambition</p>
+		</a>
+		<a href="https://ex.ipietech.net/" class="theme-icon" target="_blank">
 			<div class="img-box">
 				<img src="<?php $this->options->themeUrl('./img/wiki.jpg'); ?>">
 			</div>
