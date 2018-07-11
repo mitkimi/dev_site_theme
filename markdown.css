@@ -68,3 +68,7 @@
 .content-detail pre code {
   color: #666;
 }
+
+.content-detail img {
+  max-width: 100%;
+}
