@@ -107,6 +107,7 @@ html, body {
 }
 .header-container {
 	background: #393D49;
+  height: 61px;
 }
 .swiper-container {
   width: 100%;
