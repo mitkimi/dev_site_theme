@@ -20,7 +20,18 @@
             <div class="page-widget">标签：<?php $this->tags(' ', true, '无标签'); ?></div>
             <?php endif; ?>
             <div class="content-detail">
+                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+                <style>
+                    .hljs {
+                        background:transparent;
+                        padding: 0.5em 0;
+                    }
+                </style>
                 <?php $this->content(); ?>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+                <script>
+                    hljs.initHighlightingOnLoad();
+                </script>
             </div>
         </div>
         <div class="clearfix"></div>
