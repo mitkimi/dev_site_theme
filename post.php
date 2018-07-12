@@ -16,11 +16,13 @@
             <div class="sub-title">
                 作者：<a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a> | 时间：<?php $this->date(); ?> | <?php $this->category(','); ?>
             </div>
+            <?php if(  count($this->tags) > 0 ): ?>
+            <div class="page-widget">标签：<?php $this->tags(', ', true, '无标签'); ?></div>
+            <?php endif; ?>
             <div class="content-detail">
                 <?php $this->content(); ?>
             </div>
         </div>
-        <div class="widget">标签：<?php $this->tags(', ', true, 'none'); ?></div>
         <div class="clearfix"></div>
     </div>
 </div>
