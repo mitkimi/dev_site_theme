@@ -51,6 +51,32 @@
             <li <?php if($this->is('index')): ?> class="layui-nav-item layui-this"<?php else: ?> class="layui-nav-item" <?php endif; ?> >
                 <a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
             </li>
+            
+            <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
+            <?php while($categorys->next()): ?>
+                <?php if ($categorys->levels === 0): ?>
+                    <?php $children = $categorys->getAllChildren($categorys->mid); ?>
+                    <?php if (empty($children)) { ?>
+                        <li <?php if($this->is('category', $categorys->slug)): ?> class="layui-nav-item layui-this" <?php else: ?> class="layui-nav-item" <?php endif; ?> >
+                          <a href="<?php $categorys->permalink(); ?>"><?php $categorys->name(); ?></a>
+                        </li>
+                    <?php } else { ?>
+                        <li <?php if($this->is('category', $mid)): ?> class="layui-nav-item layui-this" <?php else: ?> class="layui-nav-item" <?php endif; ?> class="layui-nav-item">
+                          <a href="<?php $categorys->permalink(); ?>"><?php $categorys->name(); ?></a>
+                          <dl class="layui-nav-child">
+
+                            <?php foreach ($children as $mid) { ?>
+                                <?php $child = $categorys->getCategory($mid); ?>
+                                <dd><a href="<?php echo $child['permalink'] ?>"><?php echo $child['name']; ?></a></dd>
+
+                            <?php } ?>
+
+                          </dl>
+                        </li>
+
+                    <?php } ?>
+                <?php endif; ?>
+            <?php endwhile; ?>
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
             <?php while($pages->next()): ?>
                 <li 
@@ -63,28 +89,10 @@
                     <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
                 </li>
             <?php endwhile; ?>
-
             <li class="layui-nav-item">
-              <a href="javascript:;">前端</a>
-              <dl class="layui-nav-child">
-                <dd><a href="">选项1</a></dd>
-                <dd><a href="">选项2</a></dd>
-                <dd><a href="">选项3</a></dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item">
-              <a href="javascript:;">后端</a>
-              <dl class="layui-nav-child">
-                <dd><a href="">移动模块</a></dd>
-                <dd><a href="">后台模版</a></dd>
-                <dd class="layui-this"><a href="">选中项</a></dd>
-                <dd><a href="">电商平台</a></dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item">
-                <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
-                    <input type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
-                    <button type="submit" class="submit"><?php _e('搜索'); ?></button>
+                <form class="layui-btn-group" id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search" style="border:0;margin:0;padding:0;">
+                    <input type="text" id="s" name="s" class="layui-input" placeholder="<?php _e('输入关键字搜索'); ?>" style="width: 200px;display:inline-block;border:0;border-radius: 2px 0 0 2px;margin-right:-5px;"/>
+                    <button type="submit" class="layui-btn layui-btn-primary" style="display: inline-block;margin-top:-2px;border:0;border-left:1px solid #ccc;"><?php _e('搜索'); ?></button>
                 </form>
             </li>
         </ul>
