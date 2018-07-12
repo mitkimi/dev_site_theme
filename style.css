@@ -26,15 +26,15 @@ html, body {
   justify-content: space-around;
 
 }
-.theme-flex-container > .card {
-  width: 500px;
-  height: 200px;
+.theme-flex-container .card {
+  height: 300px;
   margin-bottom: 40px;
   border: 1px solid rgba(0,0,0,.05);
   box-shadow: 0 2px 2px rgba(0,0,0,.2);
   border-radius: 6px;
   padding: 15px;
   color: #999;
+  margin: 10px;
 }
 .card:hover {
   box-shadow: 0 4px 4px rgba(0,0,0,.2);
@@ -64,7 +64,7 @@ html, body {
   border-bottom: 1px dashed rgba(0,0,0,.05);
 }
 .card > .detail {
-  height: 78px;
+  height: 178px;
   overflow: hidden;  /*超过部分不显示*/
   text-overflow: ellipsis;  /*超过部分用点点表示*/
   white-space: nowrap;/*不换行*/
@@ -84,7 +84,6 @@ html, body {
 .card > .sub-title a{
   color:#999;
 }
-
 .card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .card p, .card pre, .card blockquote ,
 .card abbr, .card address, .card cite, .card code, .card del, .card dfn, 
 .card em, .card ins, .card kbd, .card q, .card samp, .card small, .card strong, 
