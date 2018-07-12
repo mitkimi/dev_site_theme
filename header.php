@@ -45,11 +45,6 @@
             <?php endif; ?>
         </div>
         <ul class="layui-nav layui-layout-right">
-            <!--首页-->
-            <li <?php if($this->is('index')): ?> class="layui-nav-item layui-this"<?php else: ?> class="layui-nav-item" <?php endif; ?> >
-                <a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
-            </li>
-            
             <?php $this->widget('Widget_Metas_Category_List')->to($categorys); ?>
             <?php while($categorys->next()): ?>
                 <?php if ($categorys->levels === 0): ?>
