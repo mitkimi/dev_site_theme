@@ -1,6 +1,22 @@
 /**/
 html, body {
 	background:#eef1f5;
+  font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.logo-container {
+  height: 30px;
+  padding-top:15px;
+}
+#logo-text {
+  color:#fff;
+  font-size:20px;
+  line-height: 30px;
+}
+#logo-text:hover {
+  color:#fff;
+}
+#logo img{
+  height: 100%;
 }
 .theme-flex-container {
   display: -webkit-flex; /* Safari */

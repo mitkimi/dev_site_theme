@@ -34,18 +34,16 @@
 <![endif]-->
 <div class="header-container">
     <div class="layui-container">
-        <ul class="layui-nav">
-          <li class="layui-nav-item">
+        <div class="logo-container">
             <?php if ($this->options->logoUrl): ?>
                 <a id="logo" href="<?php $this->options->siteUrl(); ?>">
                     <img src="<?php $this->options->logoUrl() ?>" alt="<?php $this->options->title() ?>" />
                 </a>
             <?php else: ?>
-                <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
+                <a id="logo-text" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
                 <p class="description" style='display:none'><?php $this->options->description() ?></p>
             <?php endif; ?>
-          </li>
-        </ul>
+        </div>
         <ul class="layui-nav layui-layout-right">
             <!--首页-->
             <li <?php if($this->is('index')): ?> class="layui-nav-item layui-this"<?php else: ?> class="layui-nav-item" <?php endif; ?> >
