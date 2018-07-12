@@ -1,12 +1,14 @@
 <?php
 /**
- * 用于开发网站的typecho主题，力求简约
+ * 一个用来作为开发团队工作沟通整合用的网站主题
  * UI库：layui
  * 插件：layui.js swiper.js highlight.js(cdn)
+ * 未完成内容：评论区的显示和体验、阴影部分的体验、大量文章显示懒加载、首页轮播图后台设置、工具栏的整合、快速入口后台设定
+ * 命名：Thomas & mitkimi 首三字母
  * 
- * @package Dev_site_theme
+ * @package Thomit
  * @author i@mitkimi.com
- * @version 1.1
+ * @version 1.2
  * @link https://github.com/mitkimi/devsite_theme
  */
 
