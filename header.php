@@ -61,7 +61,7 @@
                           <a href="<?php $categorys->permalink(); ?>"><?php $categorys->name(); ?></a>
                         </li>
                     <?php } else { ?>
-                        <li <?php if($this->is('category', $mid)): ?> class="layui-nav-item layui-this" <?php else: ?> class="layui-nav-item" <?php endif; ?> class="layui-nav-item">
+                        <li class="layui-nav-item">
                           <a href="<?php $categorys->permalink(); ?>"><?php $categorys->name(); ?></a>
                           <dl class="layui-nav-child">
 
