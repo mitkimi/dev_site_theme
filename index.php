@@ -2,11 +2,11 @@
 /**
  * 用于开发网站的typecho主题，力求简约
  * UI库：layui
- * 插件：layui.js swiper.js
+ * 插件：layui.js swiper.js highlight.js(cdn)
  * 
  * @package Dev_site_theme
  * @author i@mitkimi.com
- * @version 1.0
+ * @version 1.1
  * @link https://github.com/mitkimi/devsite_theme
  */
 

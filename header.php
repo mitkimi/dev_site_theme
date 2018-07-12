@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('./assets/layui/css/layui.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('./assets/swiper/css/swiper.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('markdown.css'); ?>">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <style>
+        .hljs {
+            background:transparent;
+            padding: 0.5em 0;
+        }
+    </style>
 
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
