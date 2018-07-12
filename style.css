@@ -318,3 +318,32 @@ html, body {
   color:rgba(222,222,222,1);
   text-align: center;
 }
+
+.page-navigator-container {
+  margin: 20px 0 0 0;
+}
+.page-navigator {
+  display:inline-block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  float:right;
+}
+
+.page-navigator li {
+  display:inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  border-right: 1px solid #ddd;
+}
+.page-navigator li:first-child {
+}
+.page-navigator li:last-child {
+  border-right:0;
+}
+.page-navigator .current {
+  background:#ddd;
+  color:#333;
+}
+.page-navigator .prev {}
+.page-navigator .next {}

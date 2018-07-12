@@ -27,7 +27,10 @@
                 </div>
             <?php endwhile; ?>
         </div>
-        <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+        <div class="page-navigator-container">
+            <?php $this->pageNav('前一页', '后一页'); ?>
+            <div class="clearfix"></div>
+        </div>
     <?php else: ?>
         <div class="nothing-container">
             <div class="pic-container">
