@@ -111,7 +111,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 			</div>
 			<p>wiki</p>
 		</a>
-		
+		<a href="http://docs.ipietech.net/" class="theme-icon" target="_blank" >
+			<div class="img-box">
+				<img src="<?php $this->options->themeUrl('./img/kanyun.jpg'); ?>">
+			</div>
+			<p>看云</p>
+		</a>
 	</div>
 </div>
 
