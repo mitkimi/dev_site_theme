@@ -28,7 +28,7 @@
             <?php endwhile; ?>
         </div>
         <div class="page-navigator-container">
-            <?php $this->pageNav('前一页', '后一页'); ?>
+            <?php $this->pageNav('前一页', '后一页',2,'...'); ?>
             <div class="clearfix"></div>
         </div>
     <?php else: ?>
